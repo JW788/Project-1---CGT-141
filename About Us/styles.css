@@ -1,0 +1,554 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.about-us {
+    position: absolute;
+    background: white;
+    height: 944px;
+    left: 0;
+    overflow-y: clip;
+    top: 0;
+    width: 1280px;
+}
+
+/* Background */
+.background {
+    position: absolute;
+    height: 950px;
+    left: -76px;
+    top: -6px;
+    width: 1368px;
+}
+
+.background-overflow {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.background-image {
+    position: absolute;
+    height: 197.12%;
+    left: -74.31%;
+    max-width: none;
+    top: -8.89%;
+    width: 196.83%;
+}
+
+/* Title */
+.title {
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    line-height: normal;
+    left: 556px;
+    font-style: normal;
+    font-size: 48px;
+    white-space: pre;
+    color: white;
+    top: 106px;
+}
+
+/* Mission Section */
+.mission-section {
+    position: absolute;
+    left: 132px;
+    top: 294px;
+}
+
+.mission-content-bg {
+    position: absolute;
+    background: #fffdf8;
+    height: 429px;
+    width: 600px;
+}
+
+.outfit-image {
+    position: absolute;
+    height: 430px;
+    left: 421.98px;
+    top: 0;
+    width: 348.874px;
+}
+
+.outfit-image img {
+    position: relative;
+    inset: 0;
+    object-fit: cover;
+    object-position: 50% 50%;
+    pointer-events: none;
+    left: 75px;
+    width: 80%;
+    height: 100%;
+}
+
+.mission-title {
+    position: absolute;
+    font-family: 'Irish Grover', sans-serif;
+    height: 37.537px;
+    line-height: normal;
+    left: 47.13px;
+    font-style: normal;
+    color: #f882be;
+    font-size: 24px;
+    top: 61px;
+    width: 172.941px;
+}
+
+.mission-text {
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    height: 249.356px;
+    line-height: normal;
+    left: 187.52px;
+    font-style: normal;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    top: 129px;
+    transform: translateX(-50%);
+    width: 315.047px;
+}
+
+.mission-line {
+    position: absolute;
+    height: 0;
+    left: 23px;
+    top: 107.92px;
+    width: 231.928px;
+}
+
+.mission-line svg {
+    position: absolute;
+    bottom: -0.25px;
+    left: 0;
+    right: 0;
+    top: -0.25px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Stars Group */
+.stars-group-rotated {
+    position: absolute;
+    display: flex;
+    height: calc(1px * ((325.109375 * 0.9999971389770508) + (78.25 * 0.0023886875715106726)));
+    align-items: center;
+    justify-content: center;
+    left: 372.69px;
+    top: 44.24px;
+    width: calc(1px * ((78.25 * 0.9999971389770508) + (325.109375 * 0.0023886875715106726)));
+}
+
+.stars-group-inner {
+    flex: none;
+    transform: rotate(270.137deg);
+}
+
+.stars-svg {
+    height: 78.268px;
+    width: 325.115px;
+    display: block;
+}
+
+/* Decorative Shapes */
+.shape-1 {
+    position: absolute;
+    display: flex;
+    height: calc(1px * ((425.21875 * 0.999043881893158) + (84.75 * 0.043717242777347565)));
+    align-items: center;
+    justify-content: center;
+    left: 431.68px;
+    top: 0;
+    width: calc(1px * ((84.75 * 0.999043881893158) + (425.21875 * 0.043717242777347565)));
+}
+
+.shape-1-inner {
+    flex: none;
+    transform: rotate(92.506deg) scaleY(-1);
+}
+
+.shape-svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.shape-2 {
+    position: absolute;
+    display: flex;
+    height: calc(1px * ((428.953125 * 0.9999998807907104) + (58.5625 * 0)));
+    align-items: center;
+    justify-content: center;
+    left: 449.11px;
+    top: 0;
+    width: calc(1px * ((58.5625 * 0.9999998807907104) + (428.953125 * 0)));
+}
+
+.shape-2-inner {
+    flex: none;
+    transform: rotate(90deg);
+}
+
+.shape-3 {
+    position: absolute;
+    display: flex;
+    height: calc(1px * ((428.953125 * 0.9999998807907104) + (58.5625 * 0)));
+    align-items: center;
+    justify-content: center;
+    left: 457.15px;
+    top: 0;
+    width: calc(1px * ((58.5625 * 0.9999998807907104) + (428.953125 * 0)));
+}
+
+.shape-3-inner {
+    flex: none;
+    transform: rotate(90deg);
+}
+
+/* Contact Section */
+.contact-section {
+    position: absolute;
+    left: 948px;
+    top: 294px;
+}
+
+.contact-outfit-image {
+    position: absolute;
+    height: 330.367px;
+    left: 0;
+    top: 0;
+    width: 268.904px;
+}
+
+.contact-outfit-image img {
+    position: absolute;
+    inset: 0;
+    max-width: none;
+    object-fit: cover;
+    object-position: 50% 50%;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-ripped-paper {
+    position: absolute;
+    height: 134.5px;
+    left: 0;
+    top: 238.38px;
+    width: 269px;
+}
+
+.contact-ripped-paper img {
+    position: absolute;
+    inset: 0;
+    max-width: none;
+    object-fit: cover;
+    object-position: 50% 50%;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-content-bg {
+    position: absolute;
+    background: #e1e1e0;
+    height: 144.846px;
+    left: 0;
+    border-radius: 5px;
+    top: 282.24px;
+    width: 269px;
+}
+
+.contact-title {
+    position: absolute;
+    font-family: 'Irish Grover', sans-serif;
+    height: 24px;
+    line-height: normal;
+    left: 18px;
+    font-style: normal;
+    color: #f882be;
+    font-size: 24px;
+    top: 286px;
+    width: 86px;
+}
+
+.contact-circle {
+    position: absolute;
+    left: 119px;
+    width: 21.52px;
+    height: 21.52px;
+    top: 291px;
+}
+
+.contact-circle svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-email {
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    height: 13px;
+    line-height: normal;
+    left: 146px;
+    font-style: normal;
+    font-size: 10px;
+    color: black;
+    top: 296px;
+    width: 141px;
+}
+
+.contact-line-horizontal {
+    position: absolute;
+    display: flex;
+    height: calc(1px * ((232.5625 * 0.003662978997454047) + (0 * 0.9999932646751404)));
+    align-items: center;
+    justify-content: center;
+    left: 21.52px;
+    top: 316.18px;
+    width: calc(1px * ((0 * 0.003662978997454047) + (232.5625 * 0.9999932646751404)));
+}
+
+.contact-line-horizontal-inner {
+    flex: none;
+    transform: rotate(0.21deg);
+}
+
+.contact-line-vertical {
+    position: absolute;
+    display: flex;
+    height: calc(1px * ((28.125 * 1) + (0 * 0)));
+    align-items: center;
+    justify-content: center;
+    left: 113.39px;
+    top: 288.04px;
+    width: calc(1px * ((0 * 1) + (28.125 * 0)));
+}
+
+.contact-line-vertical-inner {
+    flex: none;
+    transform: rotate(90deg);
+}
+
+/* Contact Stars */
+.contact-star-1 {
+    position: absolute;
+    left: 89px;
+    width: 14.071px;
+    height: 14.071px;
+    top: 332.31px;
+}
+
+.contact-star-1 svg {
+    position: absolute;
+    bottom: -56.86%;
+    left: -28.43%;
+    right: -28.43%;
+    top: 0;
+    display: block;
+    width: calc(100% + 56.86%);
+    height: calc(100% + 56.86%);
+}
+
+.contact-star-2 {
+    position: absolute;
+    display: flex;
+    height: calc(1px * ((14.921875 * 0.7138530611991882) + (14.125 * 0.7670267224311829)));
+    align-items: center;
+    justify-content: center;
+    left: 106.01px;
+    top: 329px;
+    width: calc(1px * ((14.125 * 0.6416151523590088) + (14.921875 * 0.7002956867218018)));
+}
+
+.contact-star-2-inner {
+    flex: none;
+    transform: rotate(45.549deg) skewX(5.61deg);
+}
+
+.contact-star-3 {
+    position: absolute;
+    height: 14.071px;
+    left: 126.25px;
+    top: 332.31px;
+    width: 14.898px;
+}
+
+.contact-star-3 svg {
+    position: absolute;
+    bottom: -56.86%;
+    left: -26.85%;
+    right: -26.85%;
+    top: 0;
+    display: block;
+    width: calc(100% + 53.7%);
+    height: calc(100% + 56.86%);
+}
+
+.contact-star-4 {
+    position: absolute;
+    display: flex;
+    height: calc(1px * ((14.9375 * 0.717348039150238) + (14.125 * 0.763853907585144)));
+    align-items: center;
+    justify-content: center;
+    left: 141.41px;
+    top: 329px;
+    width: calc(1px * ((14.125 * 0.6453892588615417) + (14.9375 * 0.6967149972915649)));
+}
+
+.contact-star-4-inner {
+    flex: none;
+    transform: rotate(45.836deg) skewX(5.614deg);
+}
+
+.contact-star-5 {
+    position: absolute;
+    left: 164.32px;
+    width: 14.071px;
+    height: 14.071px;
+    top: 332.31px;
+}
+
+.contact-star-5 svg {
+    position: absolute;
+    bottom: -56.86%;
+    left: -28.43%;
+    right: -28.43%;
+    top: 0;
+    display: block;
+    width: calc(100% + 56.86%);
+    height: calc(100% + 56.86%);
+}
+
+/* Social Icons */
+.telegram-icon {
+    position: absolute;
+    left: 1043px;
+    width: 24px;
+    height: 24px;
+    top: 659px;
+}
+
+.telegram-icon svg {
+    position: absolute;
+    inset: 1.79%;
+    display: block;
+    width: 96.42%;
+    height: 96.42%;
+}
+
+.facebook-icon {
+    position: absolute;
+    inset: 70.02% 10% 27.86% 88.44%;
+}
+
+.facebook-icon svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Toolbar */
+.toolbar-container {
+    position: absolute;
+    bottom: 0;
+    height: calc(100% - 26px);
+    left: 20px;
+    pointer-events: none;
+    top: 26px;
+}
+
+.toolbar {
+    background: rgba(200, 200, 200, 0.25);
+    height: 587px;
+    overflow: clip;
+    pointer-events: auto;
+    border-radius: 20px;
+    position: sticky;
+    top: 0;
+    width: 67px;
+}
+
+.toolbar-star {
+    position: absolute;
+    left: 13px;
+    width: 41px;
+    height: 41px;
+    top: 39px;
+}
+
+.toolbar-explore-icon {
+    position: absolute;
+    inset: 18.49% 26.43% 74.9% 27.08%;
+}
+
+.toolbar-explore-icon img {
+    position: absolute;
+    inset: 0;
+    max-width: none;
+    object-fit: cover;
+    object-position: 50% 50%;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+}
+
+.toolbar-settings {
+    position: absolute;
+    inset: 89.43% 20.83% 3.65% 21.88%;
+}
+
+.toolbar-add-icon {
+    position: absolute;
+    inset: 44.91% 29.17% 49.88% 29.17%;
+}
+
+.toolbar-add-icon img {
+    position: absolute;
+    inset: 0;
+    max-width: none;
+    object-fit: cover;
+    object-position: 50% 50%;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+}
+
+.toolbar-person-icon {
+    position: absolute;
+    height: 49px;
+    left: 7px;
+    top: 180px;
+    width: 53px;
+}
+
+.toolbar-person-icon img {
+    position: absolute;
+    inset: 0;
+    max-width: none;
+    object-fit: cover;
+    object-position: 50% 50%;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+}
