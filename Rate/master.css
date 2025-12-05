@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;                  
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Container */
+.container {
+    position: relative;
+    width: 1000px;
+    min-height: 1024px;            
+    margin: 0 auto;
+    z-index: 1;                    
+}
+
+/* Background */
+.background {
+    position: fixed;               
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Images/RMS dark bg (1).JPG');
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;
+    z-index: 0;                    
+}
+
+
+
+/* Main Title */
+.main-title {
+    position: absolute;
+    left: 170px;
+    top: 90px;
+    color: white;
+    font-size: 48px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    z-index: 10;
+}
+
+
+
+/* Sidebar */
+.sidebar {
+    position: absolute;
+    left: -90px;
+    top: 20px;
+    width: 68px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 30px;
+    z-index: 10;
+}
+.nav-icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+
+
+.nav-icon:hover {
+    background: rgba(248, 130, 190, 0.3);
+    transform: scale(1.1);
+}
+
+/* General nav icon styling */
+.nav-icon {
+    position: relative;
+    width: 40px;       /* adjust size */
+    height: 40px;
+    border: none;
+    background: none;  /* remove default button background */
+    cursor: pointer;
+}
+
+/* Star icon */
+.star-icon {
+    background-image: url('Images/Star\ 1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Explore icon */
+.explore-icon {
+    background-image: url('Images/Explore\ Fill\ Streamline\ Outlined\ Fill\ -\ Material\ Pro\ \(1\).png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Person icon */
+.person-icon {
+    background-image: url('Images/Person\ Fill\ Streamline\ Outlined\ Fill\ -\ Material\ Pro.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Plus icon */
+.plus-icon {
+    background-image: url('Images/Add\ 1\ Streamline\ Sharp\ Solid.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Settings icon */
+.settings-icon {
+    background-image: url('Images/Vector\ \(2\).png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* CTA Bubble */
+.cta-bubble {
+    position: absolute;
+    right: 70px;
+    top: 210px;
+    padding: 20px 30px;
+    z-index: 10;
+}
+
+
+/* Fashion Graphic */
+.fashion-graphic-image {
+    position: absolute;
+    right: -165px;
+    top: 280px;
+    width: 400px;
+    height: 600px;
+   
+   
+    opacity: 0.7;
+    z-index: 10;
+}
+
+/* Posts */
+.post {
+    position: absolute;
+    left: 160px;
+    width: 575px;
+    height: 320px;
+    display: flex;
+    z-index: 5;
+}
+
+.post-1 {
+    top: 186px;
+}
+
+.post-2 {
+    top: 577px;
+}
+
+/* Post Card */
+.post-card {
+    position: relative;
+    width: 363px;
+    height: 320px;
+    background: #FFFDF8;
+    border-radius: 4px;
+    padding: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.post-title {
+    font-family: 'Irish Grover', cursive;
+    font-size: 24px;
+    color: #F882BE;
+    margin-bottom: 8px;
+}
+
+/* Username Section */
+.username-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.avatar {
+    width: 26px;
+    height: 26px;
+    background: #F882BE;
+    border-radius: 50%;
+}
+
+.username {
+    font-size: 13px;
+    color: black;
+}
+
+.username-divider {
+    width: 173px;
+    height: 1px;
+    background: black;
+    margin: 8px 0 8px 83px;
+}
+
+/* Post Content */
+.post-description {
+    font-size: 11px;
+    color: black;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    width: 258px;
+    margin-left: 24px;
+}
+
+.post-hashtags {
+    font-size: 11px;
+    color: #723B57;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    width: 258px;
+    margin-left: 24px;
+}
+
+/* Rating Section */
+.rating-wrapper {
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+.rating-text {
+    font-size: 12px;
+    color: #F882BE;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.stars {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    margin-left: -15px;  
+}
+.stars .star {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.stars .star:hover {
+    transform: scale(1.2);
+}
+
+.star {
+    width: 17px;
+    height: 17px;
+}
+
+.star-outline path {
+    fill: black;
+    stroke: black;
+    stroke-width: 0.5;
+}
+
+.star-filled path {
+    fill: #F882BE;
+}
+
+.star-filled {
+    transform: rotate(45deg);
+}
+
+/* Comments Section */
+.comments-divider {
+    width: 256px;
+    height: 1px;
+    background: black;
+    margin: -15px 0 -8px 20px;
+}
+
+.comments-section {
+    margin-left: 15px;
+    margin-top: 8px;
+    width: 265px;
+    height: 60px;
+    overflow-y: auto;
+
+}
+
+.comments-button {
+    width: 265px;
+    height: 21px;
+    background: rgba(248, 130, 190, 0.6);
+    border: 0.5px solid #723B57;
+    border-radius: 6px;
+    font-size: 12px;
+    color: black;
+    text-align: left;
+    padding-left: 6px;
+    cursor: pointer;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.comment-text {
+    font-size: 12px;
+    color: black;
+}
+
+.add-comment-button {
+    width: 263px;
+    height: 18px;
+    background: rgba(248, 130, 190, 0.6);
+    border: 0.5px solid #723B57;
+    border-radius: 6px;
+    font-size: 12px;
+    color: black;
+    text-align: left;
+    padding-left: 4px;
+    cursor: pointer;
+}
+
+/* Post Image */
+.post-image {
+    position: relative;
+    width: 260px;
+    height: 320px;
+    margin-left: -48px;
+    overflow: hidden;
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Decorative Ribbons */
+.ribbon {
+    position: absolute;
+    height: 100%;
+    opacity: 0.65;
+}
+
+.ribbon-1 {
+    left: 7px;
+    width: 77px;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        #FFFDF8 10%, 
+        #FFFDF8 20%,
+        transparent 30%,
+        transparent 40%,
+        #FFFDF8 50%,
+        #FFFDF8 60%,
+        transparent 70%,
+        transparent 80%,
+        #FFFDF8 90%,
+        transparent 100%
+    );
+    transform: rotate(2.5deg);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.25));
+}
+
+.ribbon-2 {
+    left: 20px;
+    width: 44px;
+    background: linear-gradient(90deg,
+        transparent 0%,
+        #D7D7D7 20%,
+        #D7D7D7 80%,
+        transparent 100%
+    );
+    opacity: 0.65;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+.ribbon-3 {
+    left: 26px;
+    width: 44px;
+    background: linear-gradient(90deg,
+        transparent 0%,
+        #FFFDF8 20%,
+        #FFFDF8 80%,
+        transparent 100%
+    );
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .container {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .main-title {
+        left: 120px;
+        font-size: 32px;
+    }
+    
+    .post {
+        left: 120px;
+        width: calc(100% - 140px);
+    }
+
+   
+}
