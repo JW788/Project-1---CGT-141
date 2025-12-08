@@ -26,13 +26,12 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('Images/RMS dark bg (1).JPG');
     background-size: cover;        
     background-position: center;   
     background-repeat: no-repeat;
+    overflow: clip;
     z-index: 0;                    
 }
-
 
 
 /* Main Title */
@@ -52,10 +51,10 @@ html, body {
 /* Sidebar */
 .sidebar {
     position: absolute;
-    left: -90px;
-    top: 20px;
+    left: -215px;
+    top: 25px;
     width: 68px;
-    height: 500px;
+    height: 600px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -75,7 +74,6 @@ html, body {
     cursor: pointer;
     transition: background 0.3s, transform 0.3s;
 }
-
 
 
 .nav-icon:hover {
@@ -99,6 +97,7 @@ html, body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    top: 25px;
 }
 
 /* Explore icon */
@@ -107,6 +106,7 @@ html, body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    top: 25px;
 }
 
 /* Person icon */
@@ -115,6 +115,7 @@ html, body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    top: 25px;
 }
 
 /* Plus icon */
@@ -123,6 +124,7 @@ html, body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    top: 25px;
 }
 
 /* Settings icon */
@@ -131,6 +133,7 @@ html, body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    top: 240px;
 }
 
 /* CTA Bubble */
