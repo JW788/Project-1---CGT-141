@@ -15,8 +15,6 @@ body {
     position: relative;
     width: 1280px;
     height: 2766px;
-    background: white;
-    overflow: hidden;
 }
 
 /* Background */
@@ -222,7 +220,7 @@ body {
 
 .explore-bg img {
     position: absolute;
-    width: 157.23%;
+    width: 200.23%;
     height: 100%;
     left: -57.23%;
     top: 0;
