@@ -8,17 +8,52 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+/* Ensure viewport fits and prevent horizontal overflow */
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Make the background fill the viewport and cover without stretching */
+.background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* If the background is an <img>, make it cover the container */
+.background-overflow img {
+  width: 100vw;
+  height: 100px;
+  min-height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
 .container {
   position: absolute;
-  width: 1280px;
-  height: 832px;
-  overflow-y: clip;
+  inset: 0;
+  width: 100vw;
+  height: 800px;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* Background */
 .background {
-  position: absolute;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100px;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .background-overflow {
@@ -238,13 +273,15 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
   color: black;
+  margin-top: 18px;
 }
+
 
 /* Responsive adjustments */
 @media (max-width: 1280px) {
   .container {
-    transform: scale(0.8);
-    transform-origin: top left;
+    transform: none;
+    transform-origin: initial;
   }
 }
 
