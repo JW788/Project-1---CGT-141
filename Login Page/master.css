@@ -1,0 +1,440 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Root container */
+.root {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Login container */
+.login-container {
+    position: absolute;
+    height: 900px;
+    left: 0;
+    top: 0;
+    width: 1280px;
+}
+
+/* Background image */
+.background-image {
+    position: absolute;
+    height: 1000px;
+    left: 0;
+    top: 0;
+    width: 740px;
+}
+
+.background-image img {
+    position: absolute;
+    inset: 0;
+    max-width: none;
+    object-position: 50% 50%;
+    object-fit: cover;
+    pointer-events: none;
+    width: 200%;
+    height: 100%;
+}
+
+/* Torn paper frame */
+.torn-paper-frame {
+    position: absolute;
+    box-sizing: border-box;
+    content: stretch;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    left: 189px;
+    padding: 10px;
+    top: -8px;
+}
+
+.torn-paper {
+    position: relative;
+    flex-shrink: 0;
+    width: 930px;
+    height: 930px;
+}
+
+.torn-paper img {
+    position: absolute;
+    inset: 0;
+    max-width: none;
+    object-position: 50% 50%;
+    object-fit: cover;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+}
+
+/* Login title */
+.login-title {
+    position: absolute;
+    font-family: 'Irish Grover', cursive;
+    line-height: normal;
+    left: 579px;
+    font-style: normal;
+    -webkit-text-stroke: 1px black;
+    color: #f882be;
+    font-size: 64px;
+    white-space: pre;
+    top: 197px;
+}
+
+/* Username input field */
+.username-field {
+    position: absolute;
+    background: black;
+    height: 74px;
+    left: 408px;
+    border-radius: 10px;
+    top: 309px;
+    width: 507px;
+}
+
+.input-content {
+    height: 74px;
+    overflow: clip;
+    position: relative;
+    border-radius: inherit;
+    width: 507px;
+}
+
+.username-field .input-text {
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    height: 30px;
+    line-height: normal;
+    left: 31px;
+    font-style: normal;
+    font-size: 24px;
+    color: white;
+    top: 22px;
+    width: 208px;
+}
+
+.input-border {
+    position: absolute;
+    border: 1px solid black;
+    inset: 0;
+    pointer-events: none;
+    border-radius: 10px;
+    box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Password input field */
+.password-field {
+    position: absolute;
+    background: black;
+    height: 74px;
+    left: 408px;
+    border-radius: 10px;
+    top: 449px;
+    width: 507px;
+}
+
+.password-field .input-content {
+    height: 74px;
+    overflow: clip;
+    position: relative;
+    border-radius: inherit;
+    width: 507px;
+}
+
+.password-field .input-text {
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    height: 30px;
+    line-height: normal;
+    left: 23px;
+    font-style: normal;
+    font-size: 24px;
+    color: white;
+    top: 22px;
+    width: 208px;
+}
+
+/* Login button */
+.login-button {
+    position: absolute;
+    background: black;
+    height: 74px;
+    left: 503px;
+    border-radius: 10px;
+    top: 587px;
+    width: 318px;
+}
+
+.button-content {
+    height: 74px;
+    overflow: clip;
+    position: relative;
+    border-radius: inherit;
+    width: 318px;
+}
+
+.button-text {
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    height: 28px;
+    line-height: normal;
+    left: 128px;
+    font-style: normal;
+    font-size: 24px;
+    color: white;
+    top: 22px;
+    width: 25px;
+}
+
+.button-border {
+    position: absolute;
+    border: 1px solid black;
+    inset: 0;
+    pointer-events: none;
+    border-radius: 10px;
+    box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Header text */
+.header-text {
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    line-height: normal;
+    left: 419px;
+    font-style: normal;
+    font-size: 48px;
+    white-space: pre;
+    color: white;
+    top: 17px;
+}
+
+/* Toolbar wrapper */
+.toolbar-wrapper {
+    position: absolute;
+    bottom: 0;
+    height: calc(100% - 26px);
+    left: 20px;
+    top: 26px;
+}
+
+/* Toolbar */
+.toolbar {
+    background: rgba(200, 200, 200, 0.25);
+    height: 587px;
+    overflow: clip;
+    pointer-events: auto;
+    border-radius: 20px;
+    position: sticky;
+    top: 0;
+    width: 67px;
+}
+
+/* Toolbar star */
+.toolbar-star {
+    position: absolute;
+    left: 13px;
+    width: 41px;
+    height: 41px;
+    top: 39px;
+}
+
+.star-svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Explore icon */
+.explore-icon {
+    position: absolute;
+    top: 20%;       
+    left: 17px;      
+    width: 45px;    
+    height: 45px;
+    z-index: 10;    
+}
+
+.explore-icon-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* The actual icon image */
+.explore-icon-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;   
+    object-position: center;
+}
+
+
+/* Settings icon */
+.settings-icon {
+    position: absolute;
+    inset: 89.43% 20.83% 3.65% 21.88%;
+}
+
+.settings-svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Add icon */
+/* Container for the add icon */
+.add-icon-inner {
+    position: absolute;
+    top: 45%;      /* adjust placement */
+    left: 20px;     /* adjust placement */
+    width: 55px;   /* give it a fixed size */
+    height: 55px;
+    z-index: 10;   /* make sure it sits above other elements */
+}
+
+/* The actual icon image */
+.add-icon-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;   /* ensures the whole icon is visible */
+    object-position: center;
+}
+
+/* Person icon */
+.person-icon {
+    position: absolute;
+    left: 0px;
+    top: 80px;
+}
+
+.person-icon-inner {
+    position: absolute;
+    height: 49px;
+    left: 7px;
+    top: 100px;
+    width: 53px;
+}
+
+.person-icon-inner img {
+    position: absolute;
+    inset: 0;
+    max-width: none;
+    object-position: 50% 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Quiz button */
+.quiz-button {
+    position: absolute;
+    background: #d9d9d9;
+    height: 53px;
+    left: 544px;
+    top: 671px;
+    width: 235px;
+}
+
+.quiz-border {
+    position: absolute;
+    border: 1px solid #d9d9d9;
+    inset: 0;
+}
+
+/* Quiz text */
+.quiz-text {
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    line-height: normal;
+    left: 597px;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    white-space: pre;
+    top: 686px;
+}
+
+/* Right fashion graphic */
+.fashion-graphic-right {
+    position: absolute;
+    height: 706px;
+    left: 1016px;
+    top: 73px;
+    width: 238px;
+}
+
+.fashion-graphic-right .graphic-overflow {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.fashion-graphic-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* scales image to fit inside */
+    position: relative;
+}
+/* Left fashion graphic */
+.fashion-graphic-left {
+    position: absolute;
+    height: 706px;
+    left: 90px;
+    top: 73px;
+    width: 238px;
+}
+
+.fashion-graphic-left .graphic-overflow {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.fashion-graphic-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* scales image to fit inside */
+    position: relative;  /* no need for absolute positioning */
+}
+
+.toolbar img:hover {
+    opacity: 0.25;
+    transition: 0.2s;
+}
+
+.invisible-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent !important;
+    border: none !important;
+    color: white !important;
+    caret-color: white;              
+    padding-left: 30px;
+    font-size: 24px;
+    z-index: 5;
+}
+
+.input-field.typing .input-text {
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+}

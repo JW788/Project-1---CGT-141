@@ -1,0 +1,94 @@
+/* STYLE SECTIONING TAGS */
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+/* Page background image */
+body {
+  background-image: url("../images/RMSbgblack.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* Decorative paper strip behind the page title */
+header {
+  position: relative;
+  text-align: center;
+  padding: 2em 1em 1em 1em;
+}
+
+/* paper strip sits directly behind the h1 so it matches title width */
+header::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 45px;
+  transform: translateX(-50%);
+  width: 520px;
+  height: 140px;
+  background-image: url("../images/—Pngtree—white torn paper strips with_21138218.png");
+  background-size: 500px 240px;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 1;
+}
+
+header h1 {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+}
+
+/* STYLE TEXT */
+h1 {
+  font-family: 'Irish Grover', cursive;
+  font-size: 64px;
+  font-weight: 400;
+  -webkit-text-stroke: 1px #f882be;
+  color: #723B57;
+}
+
+
+h2 {
+  margin-top: 2em; 
+  color:#f882be;
+  font-family: 'Irish Grover', cursive;
+  font-weight: 400;
+}
+
+p{
+ font-family: 'Irish Grover', cursive;
+ font-weight: 400;
+ color: white;
+ font-size: 30px;
+}
+
+/* STYLE FLEX CONTAINER */
+.question {
+  display: flex;
+  margin-top: 2em;
+}
+  
+/* STYLE FLEX ITEM */
+.answer-choice {
+  margin: 20px;
+}
+
+/* STYLE IMAGES */
+.answer-choice img {
+  height: 5em;
+}
+
+.outfit img {
+  height: 15em;
+}
+
+/* STYLE BUTTON */
+button { 
+  margin-top: 5px;
+}
