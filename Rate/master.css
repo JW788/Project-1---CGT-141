@@ -51,7 +51,7 @@ html, body {
 /* Sidebar */
 .sidebar {
     position: absolute;
-    left: -215px;
+    left: -105px;
     top: 25px;
     width: 68px;
     height: 600px;
