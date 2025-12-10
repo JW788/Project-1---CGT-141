@@ -68,6 +68,13 @@ p{
  font-size: 30px;
 }
 
+p2{
+ font-family: 'Irish Grover', cursive;
+ font-weight: 400;
+ color: white;
+ font-size: 20px;
+}
+
 /* STYLE FLEX CONTAINER */
 .question {
   display: flex;
