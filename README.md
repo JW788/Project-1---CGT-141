@@ -1,0 +1,1 @@
+RMS is a student‑focused web platform where users can upload outfits, rate peer styles, and explore fashion trends. This project represents an early UX‑to‑front‑end translation, built from a collaborative wireframe and prototype.
